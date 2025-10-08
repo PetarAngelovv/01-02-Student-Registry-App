@@ -24,7 +24,7 @@ jobs:
     - name: Execute Integration tests
       run: npm test
   deploy: 
-
+    needs: build_test
     runs-on: ubuntu-latest
 
     steps:
